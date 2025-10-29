@@ -1,0 +1,31 @@
+/* Removemos todos os estilos antigos de .card, .login-container, etc. */
+
+/* Adicionamos apenas alguns utilitários de espaçamento
+   que o Bulma não tem por padrão (ex: .mb-4) */
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Garante que o layout do media object no dashboard
+   fique alinhado ao centro verticalmente */
+.media {
+  align-items: center;
+}
+
+/* Espaçamento entre os 'box' (nossos cards) */
+.box + .box {
+  margin-top: 1.5rem;
+}
+
+/* Estilos para o menu lateral */
+.menu-list a {
+  padding: 0.75em 1em;
+  border-radius: 4px;
+}
+
+/* Esta é a classe que o react-router-dom adiciona ao link ativo */
+.menu-list a.active {
+  background-color: #00d1b2; /* Cor primária do Bulma (ou 'is-primary') */
+  color: white;
+  font-weight: bold;
+}
